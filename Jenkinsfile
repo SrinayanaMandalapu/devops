@@ -10,15 +10,6 @@ pipeline {
 
     stages {
 
-
-        stage('Checkout') {
-            steps {
-                echo '🔹 Checking out source code...'
-                git branch: 'main', url: 'https://github.com/SrinayanaMandalapu/package_manager_q2.git/'
-            }
-        }
-
-
         stage('Install Dependencies') {
             steps {
                 echo '🔹 Installing dependencies using pip...'
